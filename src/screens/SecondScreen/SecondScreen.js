@@ -15,7 +15,8 @@ const secondScreen = ({ navigation }) => (
 );
 
 secondScreen.propTypes = {
-  navigation: PropTypes.func.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  navigation: PropTypes.object.isRequired,
 };
 
 export default secondScreen;

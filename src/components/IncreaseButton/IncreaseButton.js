@@ -2,17 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Button } from "react-native";
 
-const increaseButton = ({ increase }) => (
+const increaseButton = ({ increaseFirstNumByOne }) => (
   <Button
     title="+"
     onPress={() => {
-      increase();
+      increaseFirstNumByOne();
     }}
   />
 );
 
 increaseButton.propTypes = {
-  increase: PropTypes.func.isRequired,
+  increaseFirstNumByOne: PropTypes.func.isRequired,
 };
 
 export default increaseButton;

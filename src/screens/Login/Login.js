@@ -17,7 +17,8 @@ const login = ({ navigation }) => (
 );
 
 login.propTypes = {
-  navigation: PropTypes.func.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  navigation: PropTypes.object.isRequired,
 };
 
 export default login;

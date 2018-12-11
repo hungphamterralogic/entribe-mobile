@@ -1,16 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
+import { View, Text } from "react-native";
 
-const numberOnState = ({ number }) => (
-  <Text>
-    Number managed by state:
-    {number}
-  </Text>
+const numberOnState = ({ firstNumber, secondNumber }) => (
+  <View>
+    <Text>
+      First Number managed by state:
+      {firstNumber}
+    </Text>
+    <Text>
+      Second Number managed by state:
+      {secondNumber}
+    </Text>
+  </View>
 );
 
 numberOnState.propTypes = {
-  number: PropTypes.number.isRequired,
+  firstNumber: PropTypes.number.isRequired,
+  secondNumber: PropTypes.number.isRequired,
 };
 
 export default numberOnState;
