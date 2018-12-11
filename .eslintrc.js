@@ -29,7 +29,6 @@ module.exports = {
     "import/no-unresolved": 0,
     "import/prefer-default-export": "off",
     "jsx-a11y/anchor-is-valid": "off",
-    "react/prop-types": 0,
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [
       "error",

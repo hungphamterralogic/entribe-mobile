@@ -1,12 +1,12 @@
 import { connect } from "react-redux";
+import { increaseAction } from "@actions/numberActions";
 import IncreaseButton from "./IncreaseButton";
-import { increaseAction } from "../../actions/numberActions";
 
 const IncreaseButtonContainer = connect(
   null,
   dispatch => ({
-    increase: () => dispatch(increaseAction())
-  })
+    increase: () => dispatch(increaseAction()),
+  }),
 )(IncreaseButton);
 
 export default IncreaseButtonContainer;

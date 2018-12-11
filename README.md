@@ -9,6 +9,8 @@ npm install
 react-native run-android
 ```
 
+Note: for the "`react-native run-android`", have a android simulator run first before running this command.
+
 # Convention
 
 ## Config VSCode for coding style

@@ -1,8 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Button } from "react-native";
 import { StackActions, NavigationActions } from "react-navigation";
 
-const NavigateButton = ({ title, routeName, navigation: { dispatch } }) => (
+const navigateButton = ({ title, routeName, navigation: { dispatch } }) => (
   <Button
     title={title}
     onPress={() => {
@@ -16,4 +17,12 @@ const NavigateButton = ({ title, routeName, navigation: { dispatch } }) => (
   />
 );
 
-export default NavigateButton;
+navigateButton.propTypes = {
+  title: PropTypes.string.isRequired,
+  routeName: PropTypes.string.isRequired,
+  navigation: PropTypes.shape({
+    dispatch: PropTypes.func.isRequired,
+  }).isRequired,
+};
+
+export default navigateButton;

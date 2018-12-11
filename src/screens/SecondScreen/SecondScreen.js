@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { View, Text } from "react-native";
-import NavigateButton from "../../components/NavigateButton";
-import IncreaseButton from "../../components/IncreaseButton";
-import NumberOnState from "../../components/NumberOnState";
+import NavigateButton from "@components/NavigateButton";
+import IncreaseButton from "@components/IncreaseButton";
+import NumberOnState from "@components/NumberOnState";
 
-const SecondScreen = ({ navigation }) => (
+const secondScreen = ({ navigation }) => (
   <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
     <NumberOnState />
     <Text>Second Screen</Text>
@@ -13,4 +14,8 @@ const SecondScreen = ({ navigation }) => (
   </View>
 );
 
-export default SecondScreen;
+secondScreen.propTypes = {
+  navigation: PropTypes.func.isRequired,
+};
+
+export default secondScreen;

@@ -1,4 +1,1 @@
-import { combineReducers } from "redux";
-import number from "./number";
-
-export default combineReducers({ number });
+export { default } from "./reducers";

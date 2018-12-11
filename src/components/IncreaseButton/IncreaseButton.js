@@ -1,13 +1,18 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Button } from "react-native";
 
-const increaseButton = props => (
+const increaseButton = ({ increase }) => (
   <Button
     title="+"
     onPress={() => {
-      props.increase();
+      increase();
     }}
   />
 );
+
+increaseButton.propTypes = {
+  increase: PropTypes.func.isRequired,
+};
 
 export default increaseButton;
